@@ -1,0 +1,8 @@
+services:
+  ml_service:
+    build:
+      context: ./app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app
